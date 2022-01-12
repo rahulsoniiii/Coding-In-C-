@@ -19,15 +19,15 @@ class Intiger{
         //     temp.a = ++a;
         //     return temp;
         // }
-        friend Intiger operator++(Intiger,int);
-        friend Intiger operator++(Intiger);
+        friend Intiger operator++(Intiger &i,int);
+        friend Intiger operator++(Intiger &i);
 };
-Intiger operator++(Intiger i){
+Intiger operator++(Intiger &i){
     Intiger temp;
     temp.a = ++i.a;
     return temp;
 }
-Intiger operator++(Intiger i,int){
+Intiger operator++(Intiger &i,int){
     Intiger temp;
     temp.a = i.a++;
     return temp;

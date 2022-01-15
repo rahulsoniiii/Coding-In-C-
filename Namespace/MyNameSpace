@@ -1,0 +1,12 @@
+namespace Myspace
+{
+    int a;
+    void fun();
+    class Hello{
+        public:
+            void hello(){std::cout<<"Hello ";}
+    };
+} 
+void Myspace::fun(){
+    std::cout<<"I am fun";
+}
